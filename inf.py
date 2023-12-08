@@ -1,7 +1,7 @@
 from faster_whisper import WhisperModel
 from opencc import OpenCC
 import torch
-model_size = "C:/Users/Administrator/.cache/huggingface/hub/models--guillaumekln--faster-whisper-large-v2/snapshots/f541c54c566e32dc1fbce16f98df699208837e8b"
+model_size = "/home/op/large-v3"
 
 # Run on GPU with FP16
 model = WhisperModel(model_size, device="cuda", compute_type="int8_float16")
